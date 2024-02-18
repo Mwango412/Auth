@@ -3,5 +3,10 @@
 <p>create your environment by running the following command</p>
 
 ```bash
-python manage.py runserver
+python -m venv venv
+
+<p>activate your virtual environment</p>
+
+```bash
+. venv/bin/activate
 
