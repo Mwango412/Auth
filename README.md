@@ -1,10 +1,8 @@
+<h1>Instructions</h1>
+
+<p>create your environment by running the following command</p>
 
 
 ```bash
-#!/bin/bash
-
-echo "Hello, this is a Bash script."
-
-# Additional commands...
-
-# The script concludes naturally when there are no more commands.
+    python -m venv venv
+```
