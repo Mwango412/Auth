@@ -1,4 +1,4 @@
-pip install Django==4.2.1
-pip install djangorestframework==3.14.0
-pip install django-allauth==0.52.0
-pip install "dj-rest-auth[with_social]==4.0.0"
+Django==4.2.1
+djangorestframework==3.14.0
+django-allauth==0.52.0
+"dj-rest-auth[with_social]==4.0.0"
