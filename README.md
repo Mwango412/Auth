@@ -19,7 +19,14 @@
 . venv/bin/activate
 ```
 
-<i>install the required dependencies</i>
+<p>install the required dependencies</p>
 ```bash
 pip install -r requirements.txt
 ```
+
+
+<p>run migrations</p>
+```bash
+python manage.py migrate
+```
+
