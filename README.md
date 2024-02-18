@@ -21,7 +21,7 @@
 ```
 
 
-<p>install the required dependencies</p>
+<i>install the required dependencies</i>
 ```bash
 pip install -r requirements.txt
 ```
