@@ -7,11 +7,6 @@ python -m venv venv
 
 
 
-# <p>activate your virtual environment</p>
 
-# bash
-# . venv/bin/activate
-
-# pip install -r requirements.txt
 
 
