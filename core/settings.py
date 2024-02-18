@@ -140,3 +140,21 @@ REST_FRAMEWORK = {
         "rest_framework.authentication.TokenAuthentication",
     ]
 }
+
+SOCIALACCOUNT_PROVIDERS = {
+    "google": {
+        "APP": {
+            "client_id": "487973491159-ve8hmc5gl80t32gtn9t99mt4tnsv9rg5.apps.googleusercontent.com",
+            "secret": "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",
+            "key": "",
+        },
+        "SCOPE": [
+            "profile",
+            "email",
+        ],
+        "AUTH_PARAMS": {
+            "access_type": "online",
+        },
+        "VERIFIED_EMAIL": True,
+    },
+}
