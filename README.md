@@ -32,3 +32,7 @@ pip install -r requirements.txt
 python manage.py migrate
 ```
 
+<i>run the server</i>
+```bash
+python manage.py runserver
+```
