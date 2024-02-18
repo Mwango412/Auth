@@ -6,3 +6,13 @@
 ```bash
     python -m venv venv
 ```
+<p>Activate your environment</p>
+<i>for windows use the following</i>
+```bash
+source venv/bin/activate
+```
+
+<i>for other os use the following</i>
+```bash
+. venv/bin/activate
+```
