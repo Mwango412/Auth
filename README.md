@@ -14,10 +14,12 @@
     source venv/bin/activate
 ```
 
+
 <i>for other os use the following</i>
 ```bash
 . venv/bin/activate
 ```
+
 
 <p>install the required dependencies</p>
 ```bash
