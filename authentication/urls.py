@@ -1,5 +1,7 @@
 from dj_rest_auth.registration.views import RegisterView
 from dj_rest_auth.views import LoginView, LogoutView, UserDetailsView
+from allauth.socialaccount.views import signup
+from authentication.views import GoogleLogin
 from django.urls import path
 from . import views
 
