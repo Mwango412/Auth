@@ -208,3 +208,20 @@ ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+
+from datetime import timedelta
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
+    'REFRESH_TOKEN_LIFETIME': timedelta(hours=1),
+}
+
+REST_AUTH = {
+    "use_jwt": True,
+    "JWT_AUTH_COOKIE":"access",
+    "JWT_AUTH_COOKIE": "jwt-auth",
+    "JWT_AUTH_REFRESH_COOKIE": "refresh",
+    "JWT_AUTH_COOKIE_HTTPONLY": False,
+    "SESSION_LOGIN": False,
+    "OLD_PASSWORD_FIELD_ENABLED": True,
+}
