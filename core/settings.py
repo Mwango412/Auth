@@ -11,6 +11,11 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -50,6 +55,7 @@ INSTALLED_APPS = [
     "dj_rest_auth",
     "dj_rest_auth.registration",
     "allauth.socialaccount.providers.google",
+    "allauth.socialaccount.providers.facebook",
 ]
 
 MIDDLEWARE = [
@@ -144,17 +150,57 @@ REST_FRAMEWORK = {
 SOCIALACCOUNT_PROVIDERS = {
     "google": {
         "APP": {
-            "client_id": "487973491159-ve8hmc5gl80t32gtn9t99mt4tnsv9rg5.apps.googleusercontent.com",
-            "secret": "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",
+            "client_id": os.getenv('GOOGLE_CLIENT_ID'),
+            "secret": os.getenv('GOOGLE_CLIENT_SECRET'),
             "key": "",
         },
         "SCOPE": [
             "profile",
             "email",
         ],
+        'FIELDS': [
+            'id',
+            'first_name',
+            'last_name',
+            'middle_name',
+            'name',
+            'email',
+            'name_format',
+            'picture',
+            'short_name'
+        ],
         "AUTH_PARAMS": {
             "access_type": "online",
         },
         "VERIFIED_EMAIL": True,
     },
+    'facebook': {
+        'METHOD': 'oauth2',  # Set to 'js_sdk' to use the Facebook connect SDK
+        'SDK_URL': '//connect.facebook.net/{locale}/sdk.js',
+        'SCOPE': ['email', 'public_profile'],
+        'AUTH_PARAMS': {'auth_type': 'reauthenticate'},
+        'INIT_PARAMS': {'cookie': True},
+        "APP": {
+            "client_id": os.getenv('FACEBOOK_CLIENT_ID'),
+            "secret": os.getenv('FACEBOOK_SECRET'),
+            "key": "",
+        },
+        'FIELDS': [
+            'id',
+            'first_name',
+            'last_name',
+            'middle_name',
+            'name',
+            'email',
+            'name_format',
+            'picture',
+            'short_name'
+        ],
+        'EXCHANGE_TOKEN': True,
+        'LOCALE_FUNC': 'path.to.callable',
+        'VERIFIED_EMAIL': False,
+        'VERSION': 'v13.0',
+        'GRAPH_API_URL': 'https://graph.facebook.com/v13.0',
+    },
+
 }

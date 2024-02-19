@@ -2,6 +2,7 @@ from dj_rest_auth.registration.views import RegisterView
 from dj_rest_auth.views import LoginView, LogoutView, UserDetailsView
 from allauth.socialaccount.views import signup
 from authentication.views import GoogleLogin
+from authentication.views import FacebookLogin
 from django.urls import path
 from . import views
 
@@ -13,4 +14,5 @@ urlpatterns = [
     path("user/", UserDetailsView.as_view(), name="rest_user_details"),
     path("signup/", signup, name="socialaccount_signup"),
     path("google/", GoogleLogin.as_view(), name="google_login"),
+    path("facebook/", FacebookLogin.as_view(), name='fb_login'),
 ]
