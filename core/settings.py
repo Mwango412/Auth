@@ -165,9 +165,6 @@ SOCIALACCOUNT_PROVIDERS = {
             'middle_name',
             'name',
             'email',
-            'name_format',
-            'picture',
-            'short_name'
         ],
         "AUTH_PARAMS": {
             "access_type": "online",
@@ -192,9 +189,6 @@ SOCIALACCOUNT_PROVIDERS = {
             'middle_name',
             'name',
             'email',
-            'name_format',
-            'picture',
-            'short_name'
         ],
         'EXCHANGE_TOKEN': True,
         'LOCALE_FUNC': 'path.to.callable',
