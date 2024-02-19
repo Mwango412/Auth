@@ -225,3 +225,7 @@ REST_AUTH = {
     "SESSION_LOGIN": False,
     "OLD_PASSWORD_FIELD_ENABLED": True,
 }
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000/",
+]
