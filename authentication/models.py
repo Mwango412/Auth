@@ -24,7 +24,7 @@ class CustomUserModel(AbstractBaseUser, PermissionsMixin):
     last_login = models.DateTimeField(_('date joined'), auto_now_add=True)
     
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['first_name']
+    REQUIRED_FIELDS = ['first_name','last_name']
     
     objects = CustomUserManager()
     
