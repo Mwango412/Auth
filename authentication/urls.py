@@ -8,6 +8,7 @@ from . import views
 from authentication.views import GoogleLogin, FacebookLogin
 
 
+
 urlpatterns = [
     # path("register/", RegisterView.as_view(), name="rest_register"),
     # path("login/", LoginView.as_view(), name="rest_login"),

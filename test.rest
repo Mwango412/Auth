@@ -28,7 +28,7 @@ Content-Type: application/json
 #Getting a new access token
 GET  http://localhost:8000/api/auth/rest/user/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4NDE5Njc5LCJpYXQiOjE3MDg0MTkzNzksImp0aSI6IjhhMTZlMjhjZWI3NTQ3MjE5NzdiNWE3ZjZmNDQ4MTc3IiwidXNlcl9pZCI6Mn0.m-khbEze5aE6SwbPfkyaULnXQjXpKWiDSqd3tV74-cg
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4NDMyMjk0LCJpYXQiOjE3MDg0MzE5OTQsImp0aSI6ImViZTkxOGRkZTZhNjQ4Nzc5NWFiNWNiMjk1MmQzM2E1IiwidXNlcl9pZCI6NX0.GJE0sPSDT0QUEnWsR6oKtjAo69sIlkCKhtldLq55Mvs
 
 ###
 
@@ -43,7 +43,15 @@ Content-Type: application/json
 ###
 
 
-POST http://localhost:8000/api/auth/google/
+POST http://localhost:8000/api/auth/facebook/
 Content-Type: application/json
-"Token": code 4/0AeaYSHB7gXuA1rKiDVyKSMfqmkFZyNzyYhrhnr7pzwUlZSk3H4kDLbwklZmIo4BKLQE-yQ
+
+{
+  "provider":"facebook",
+  "access_token":"EAAUOt3abGmcBO85foc6xpeT13vy5OVtCLT5lQRSUiq0cdCmMIQp76vAiOL8Gn8fxZCvXkKBAUdIMjkhRXu22jqJEBUDou3TFxBhHPZCoMbrU8KDHHYcvPgLN9jGwA7QTgHYF2qEgj8IW6qGry8t6DyU6MtKoxvdMsVk50KJmVSOoHBatSnKCZBE7wrB2IjQpQZDZD"
+}
+
+##
+
+
 
