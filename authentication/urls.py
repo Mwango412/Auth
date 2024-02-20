@@ -13,6 +13,7 @@ urlpatterns = [
     # path("logout/", LogoutView.as_view(), name="rest_logout"),
     # path("user/", UserDetailsView.as_view(), name="rest_user_details"),
     path('rest/', include('dj_rest_auth.urls')),
+    path('rest/register/', include('dj_rest_auth.registration.urls')),
     path("signup/", signup, name="socialaccount_signup"),
     path("google/", GoogleLogin.as_view(), name="google_login"),
     path("facebook/", FacebookLogin.as_view(), name='fb_login'),

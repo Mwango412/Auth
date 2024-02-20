@@ -225,10 +225,11 @@ SIMPLE_JWT = {
     'REFRESH_TOKEN_LIFETIME': timedelta(hours=3),
 }
 
+
+
 REST_AUTH = {
     "USE_JWT": True,
-    "JWT_AUTH_COOKIE":"access",
-    "JWT_AUTH_COOKIE": "jwt-auth",
+    "JWT_AUTH_COOKIE": "access",
     "JWT_AUTH_REFRESH_COOKIE": "refresh",
     "JWT_AUTH_COOKIE_HTTPONLY": False,
     "SESSION_LOGIN": False,
