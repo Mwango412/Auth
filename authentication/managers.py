@@ -35,7 +35,7 @@ class CustomUserManager(BaseUserManager):
             
             return user
         
-    def create_superuser(self, email, first_name, last_name=None, password=None, **extra_fields):
+    def create_superuser(self, email, first_name, last_name, password=None, **extra_fields):
         if not email:
             raise ValueError(_("This is a required field"))
         else:
