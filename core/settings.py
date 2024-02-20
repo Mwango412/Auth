@@ -145,7 +145,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": [
-        "dj-rest-auth.jwt_auth.JWTCookieAuthentication",
+        "dj_rest_auth.jwt_auth.JWTCookieAuthentication",
     ]
 }
 
@@ -226,7 +226,7 @@ REST_AUTH = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000/",
+    "http://localhost:3000",
 ]
 
 

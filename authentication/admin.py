@@ -38,4 +38,4 @@ class UserAdminCustom(UserAdmin):
     
     readonly_fields = ("last_login", "date_joined")
     
-    admin.site.register(CustomUserModel, UserAdminCustom)
+admin.site.register(CustomUserModel, UserAdminCustom)
