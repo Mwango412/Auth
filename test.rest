@@ -1,3 +1,5 @@
+
+#login
 POST http://localhost:8000/api/auth/rest/login/
 Content-Type: application/json
 
@@ -16,9 +18,19 @@ Content-Type: application/json
 
 ###
 
-GET  http://127.0.0.1:8000/api/v1/test_token/
+#Getting a new access token
+GET  http://localhost:8000/api/auth/rest/user/
 Content-Type: application/json
-Authorization: Token 0ddeea98a532115681d2d0df0ea1fd24d02cab54
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4NDE5Njc5LCJpYXQiOjE3MDg0MTkzNzksImp0aSI6IjhhMTZlMjhjZWI3NTQ3MjE5NzdiNWE3ZjZmNDQ4MTc3IiwidXNlcl9pZCI6Mn0.m-khbEze5aE6SwbPfkyaULnXQjXpKWiDSqd3tV74-cg
+
+###
 
 
+#Getting a new refresh token
+POST  http://localhost:8000/api/auth/rest/token/refresh/
+Content-Type: application/json
+
+{
+    "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwODQzMDU5OSwiaWF0IjoxNzA4NDE5Nzk5LCJqdGkiOiJhMjg5NWI5MGI2NzY0NTUwYmU0Y2ZiMmUxNzMzMTkxZCIsInVzZXJfaWQiOjJ9.9mFPMeD1I60GqTx9Jr5f4Fgnf0VZ5szzI_ec2tPgcMk"
+}
 
