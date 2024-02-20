@@ -10,13 +10,15 @@ class CustomUserManager(BaseUserManager):
         except ValidationError:
             raise ValidationError(_('Invalid email'))
         
-    def create_user(self, email,first_name,last_name=None, password=None, **extra_fields):
+    def create_user(self, email,first_name,last_name, password=None, **extra_fields):
         if not email:
             raise ValueError(_("This is a required field"))
         else:
             self.email_validation(email)
             cleaned_email = self.normalize_email(email)
             if not first_name:
+                raise ValueError(_("This is a required field"))
+            if not last_name:
                 raise ValueError(_("This is a required field"))
             
             user = self.model(
