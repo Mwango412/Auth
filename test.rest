@@ -51,7 +51,19 @@ Content-Type: application/json
   "access_token":"EAAUOt3abGmcBO85foc6xpeT13vy5OVtCLT5lQRSUiq0cdCmMIQp76vAiOL8Gn8fxZCvXkKBAUdIMjkhRXu22jqJEBUDou3TFxBhHPZCoMbrU8KDHHYcvPgLN9jGwA7QTgHYF2qEgj8IW6qGry8t6DyU6MtKoxvdMsVk50KJmVSOoHBatSnKCZBE7wrB2IjQpQZDZD"
 }
 
-##
+###
 
+
+
+POST http://localhost:8000/api/auth/google/
+Content-Type: application/json
+
+{
+    "access_token": "",
+    "code": "4/0AeaYSHAvfJm7cTUtMO3UjOiTN0juUvGejj01RXj3cnc7l_9jBfUq23WZ2LKOJhPwRPrGIw",
+    "id_token": "487973491159-ve8hmc5gl80t32gtn9t99mt4tnsv9rg5.apps.googleusercontent.com"
+}
+
+###
 
 

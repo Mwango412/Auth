@@ -4,9 +4,9 @@ from django.utils.translation import gettext_lazy as _
 from .managers import CustomUserManager
 # Create your models here.
 class CustomUserModel(AbstractBaseUser, PermissionsMixin):
-    email = models.EmailField(_('email address'), unique=True)
-    first_name = models.CharField(_('first name'), max_length=150, blank=True)
-    last_name = models.CharField(_('last name'), max_length=150, blank=True)
+    email = models.EmailField(unique=True)
+    first_name = models.CharField(max_length=150, blank=True)
+    last_name = models.CharField(max_length=150, blank=True)
     is_staff = models.BooleanField(
         _('staff status'),
         default=False,
