@@ -11,10 +11,17 @@ Content-Type: application/json
 
 ###
 
-POST http://127.0.0.1:8000/api/v1/signup/
+#sign up
+POST http://localhost:8000/api/auth/rest/register/
 Content-Type: application/json
 
-{"username":"dev1","email":"dev.robert@gmail.com","password":"dev1"}
+{
+  "email":"bob1@gmail.com",
+  "password1":"T624183.bob",
+  "password2":"T624183.bob",
+  "first_name":"bob",
+  "last_name":"mwale"
+}
 
 ###
 
@@ -33,4 +40,10 @@ Content-Type: application/json
 {
     "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwODQzMDU5OSwiaWF0IjoxNzA4NDE5Nzk5LCJqdGkiOiJhMjg5NWI5MGI2NzY0NTUwYmU0Y2ZiMmUxNzMzMTkxZCIsInVzZXJfaWQiOjJ9.9mFPMeD1I60GqTx9Jr5f4Fgnf0VZ5szzI_ec2tPgcMk"
 }
+###
+
+
+POST http://localhost:8000/api/auth/google/
+Content-Type: application/json
+"Token": code 4/0AeaYSHB7gXuA1rKiDVyKSMfqmkFZyNzyYhrhnr7pzwUlZSk3H4kDLbwklZmIo4BKLQE-yQ
 
