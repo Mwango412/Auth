@@ -1,0 +1,24 @@
+POST http://localhost:8000/api/auth/rest/login/
+Content-Type: application/json
+
+
+{
+  "email":"bob@gmail.com",
+  "password":"T624183.bob"
+}
+
+###
+
+POST http://127.0.0.1:8000/api/v1/signup/
+Content-Type: application/json
+
+{"username":"dev1","email":"dev.robert@gmail.com","password":"dev1"}
+
+###
+
+GET  http://127.0.0.1:8000/api/v1/test_token/
+Content-Type: application/json
+Authorization: Token 0ddeea98a532115681d2d0df0ea1fd24d02cab54
+
+
+
