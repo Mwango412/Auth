@@ -61,7 +61,7 @@ grant_type:authorization_code
 Authorization: code 4/0AeaYSHBaeiBMSBm6rAZrPbJIKHbAQ48FPxDuHY52Wy2Bxhu_KlkLmif6Yrp86IfFW9-UMA
 
 {
-    "code": ""
+    "code": "4/0AeaYSHAofJpkR_OhJK0AmNj-ryMB2RegjWteNDivbaF5gpsXHVDLBL0HeedaS1x6BX2zPQ"
 }
 
 ###
