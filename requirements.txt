@@ -5,3 +5,5 @@ django-allauth==0.52.0
 python-dotenv
 django-cors-headers==4.1.0
 djangorestframework-simplejwt
+pytest
+
