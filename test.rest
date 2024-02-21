@@ -57,11 +57,9 @@ Content-Type: application/json
 
 POST http://localhost:8000/api/auth/google/
 Content-Type: application/json
-grant_type:authorization_code
-Authorization: code 4/0AeaYSHBaeiBMSBm6rAZrPbJIKHbAQ48FPxDuHY52Wy2Bxhu_KlkLmif6Yrp86IfFW9-UMA
 
 {
-    "code": "4/0AeaYSHAofJpkR_OhJK0AmNj-ryMB2RegjWteNDivbaF5gpsXHVDLBL0HeedaS1x6BX2zPQ"
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4NTAyODk0LCJpYXQiOjE3MDg1MDI1OTQsImp0aSI6Ijk4NDU1NTEwYzQ5ZDQ2MTY5ZDEzMjlmZTA2ZTIxNWYxIiwidXNlcl9pZCI6Nn0.f3ARDZyk6FM_brnPvu6t5HpOKzI5ptmcXdjy71jSiNs"
 }
 
 ###
